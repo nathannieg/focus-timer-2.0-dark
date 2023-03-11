@@ -1,0 +1,13 @@
+:root {
+
+    /* VARIABLES */
+    --bg-color: #121214;
+    --primary-color: #29292E;
+    --secondary-color: #0A3442;
+    --text-color: #FFFFFF;
+  }
+  
+  body {
+    color: var(--text-color);
+    background-color: var(--bg-color);
+  }
