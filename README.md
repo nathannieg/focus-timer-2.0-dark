@@ -20,3 +20,9 @@ O que fazer:
 
 - Criar o dark mode: https://www.figma.com/file/Wr075kNfcVTdKdEnecd4Ha/Stage-05---Dark-Mode-FocusTimer-(Copy)-(Copy)?t=AGIvPYpIJ48HIaoG-0
 - Nessa versão, o volume dos sons deverá ser controlado pelo slider que está embaixo de cada ícone. Por padrão, quando você clicar em qualquer área de um card, você pode deixar o volume em 50%.
+
+# Próximos passos
+
+- Fazer o CSS do dark mode.
+
+- Começar o JS.
