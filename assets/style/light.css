@@ -7,7 +7,7 @@
   --text-color: #29292E;
 }
 
-body {
+.light__body--on {
   color: var(--text-color);
   background-color: var(--bg-color);
 }
