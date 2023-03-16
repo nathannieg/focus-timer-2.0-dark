@@ -1,3 +1,7 @@
+// IMPORTS
+import Timer from './timer.js'
+
+// VARIABLES
 const buttonToggleTheme = document.querySelector('#toggle__theme')
 
 const minutesDisplay = document.querySelector('#timer__display__minutes')
@@ -18,50 +22,18 @@ const cafeCardClicked = document.querySelector('.card__cafe--clicked')
 const fireCardUnclicked = document.querySelector('.card__fire--unclicked')
 const firepCardClicked = document.querySelector('.card__fire--clicked')
 
-let timerTimeOut
+// let timerTimeOut
 
-let minutes = minutesDisplay.textContent
-let seconds = secondsDisplay.textContent
+// let minutes = minutesDisplay.textContent
+// let seconds = secondsDisplay.textContent
 
-function countdown() {
-  timerTimeOut = setTimeout(() => {
-    let countdownMinutes = Number(minutesDisplay.textContent)
-    let countdownSeconds = Number(secondsDisplay.textContent)
-
-    updateTimerDisplay(countdownMinutes, 0)
-
-    // You've subtracted a seconds. Now, if minutes is <= 0, we'll stop the application
-    if (countdownMinutes <= 0) {
-      reset()
-      return
-    }
-
-    // Now, if seconds has gotten to zero, you need to subtract 1 from minutes
-    if (countdownSeconds <= 0) {
-      countdownSeconds = 4
-      --countdownMinutes // same as countdownMinutes = countdownMinutes - 1
-    }
-
-    updateTimerDisplay(countdownMinutes, String(countdownSeconds - 1))
-
-    countdown()
-  }, 1000)
-}
+// FACTORIES IMPORT
+const timer = Timer({ minutesDisplay, secondsDisplay })
 
 buttonPlay.addEventListener('click', () => {
-  countdown()
+  timer.countdown()
 })
 
 buttonStop.addEventListener('click', () => {
-  reset()
+  timer.reset()
 })
-
-function reset() {
-  updateTimerDisplay(minutes, seconds)
-  clearTimeout(timerTimeOut)
-}
-
-function updateTimerDisplay(min, sec) {
-  minutesDisplay.textContent = String(min).padStart(2, '0')
-  secondsDisplay.textContent = String(sec).padStart(2, '0')
-}
