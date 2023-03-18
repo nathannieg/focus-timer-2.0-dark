@@ -1,27 +1,38 @@
 export default function () {
   // creating variables to stores audios
-  const forestSound = new Audio(
-    'https://drive.google.com/file/d/1CRHkV72WUMdcqec5GT_KdsqFz0z3VAOA/view'
-  )
-  const rainSound = new Audio(
-    'https://drive.google.com/file/d/1Ip8xBqAUJ-bty51Wz8JBtX_bWXCgA0P2/view'
-  )
-  const cafeSound = new Audio(
-    'https://drive.google.com/file/d/1OxLKpCwg2wrxXFNUHgZxJ51QEt0ac5RA/view'
-  )
-  const fireSound = new Audio(
-    'https://drive.google.com/file/d/1MakaBPxJvTa_whaSM3kEbRcxiVd1GRCB/view'
+  const forestSound = new Audio('./assets/audio/Floresta.wav')
+  const rainSound = new Audio('./assets/audio/Chuva.wav')
+  const cafeSound = new Audio('./assets/audio/Cafeteria.wav')
+  const fireSound = new Audio('./assets/audio/Lareira.wav')
+
+  forestSound.loop = true
+  rainSound.loop = true
+  cafeSound.loop = true
+  fireSound.loop = true
+
+  const buttonPressAudio = new Audio(
+    'https://github.com/maykbrito/automatic-video-creator/blob/master/audios/button-press.wav?raw=true'
   )
 
   // Sound in loop
   // fireSound.loop = true
 
-  function clickOnCard(card) {
-    const newCard = card
-    newCard.play()
+  // All functions that will play audio files go here
+  function pressButton() {
+    buttonPressAudio.play()
+  }
+
+  function playForestSound() {
+    forestSound.play()
+  }
+
+  function stopForestSound() {
+    forestSound.stop()
   }
 
   return {
-    clickOnCard
+    pressButton,
+    playForestSound,
+    stopForestSound
   }
 }
