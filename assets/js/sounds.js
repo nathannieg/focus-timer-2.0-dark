@@ -5,6 +5,7 @@ export default function () {
   const cafeSound = new Audio('./assets/audio/Cafeteria.wav')
   const fireSound = new Audio('./assets/audio/Lareira.wav')
 
+  // Sound in loop
   forestSound.loop = true
   rainSound.loop = true
   cafeSound.loop = true
@@ -14,25 +15,21 @@ export default function () {
     'https://github.com/maykbrito/automatic-video-creator/blob/master/audios/button-press.wav?raw=true'
   )
 
-  // Sound in loop
-  // fireSound.loop = true
-
   // All functions that will play audio files go here
   function pressButton() {
     buttonPressAudio.play()
   }
 
-  function playForestSound() {
-    forestSound.play()
-  }
-
   function stopForestSound() {
-    forestSound.stop()
+    forestSound.pause()
   }
 
   return {
     pressButton,
-    playForestSound,
+    forestSound,
+    rainSound,
+    cafeSound,
+    fireSound,
     stopForestSound
   }
 }

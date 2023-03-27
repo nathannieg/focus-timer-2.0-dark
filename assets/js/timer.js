@@ -1,7 +1,3 @@
-import Sounds from './sounds.js'
-
-// using Sounds -> Sounds().clickOnCard
-
 export default function Timer({ minutesDisplay, secondsDisplay }) {
   let timerTimeOut
   let minutes = minutesDisplay.textContent
@@ -24,7 +20,7 @@ export default function Timer({ minutesDisplay, secondsDisplay }) {
 
       // If seconds has reached zero, we subtract 1 from minutes
       if (countdownSeconds <= 0) {
-        countdownSeconds = 60
+        countdownSeconds = 3 //should be 60
         --countdownMinutes // same as countdownMinutes = countdownMinutes - 1
       }
 

@@ -1,13 +1,13 @@
 :root {
 
   /* VARIABLES */
-  --bg-color: #121214;
-  --primary-color: #29292E;
-  --secondary-color: #0A3442;
-  --text-color: #FFFFFF;
+  --bg-color-dark: #121214;
+  --primary-color-dark: #29292E;
+  --secondary-color-dark: #0A3442;
+  --text-color-dark: #FFFFFF;
 }
   
 .dark__body--on {
-  color: var(--text-color);
-  background-color: var(--bg-color);
+  color: var(--text-color-dark);
+  background-color: var(--bg-color-dark);
 }

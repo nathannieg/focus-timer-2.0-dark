@@ -1,5 +1,4 @@
 @import url('./light.css');
-/* @import url('./dark.css'); */
 
 * {
   margin: 0;
@@ -15,6 +14,12 @@
   --primary-color: #E1E1E6;
   --secondary-color: #02799D;
   --text-color: #29292E; */
+  
+  /* VARIABLES - DARK THEME*/
+  --bg-color-dark: #121214;
+  --primary-color-dark: #29292E;
+  --secondary-color-dark: #0A3442;
+  --text-color-dark: #FFFFFF;
 }
   
 body {
@@ -26,14 +31,21 @@ body {
   display: none;
 }
 
-#toggle__theme {
+.sun__button,
+.moon__button {
   right: 3rem;
   top: 3rem;
   height: 4.4rem;
   width: 4.4rem;
   position: absolute;
 }
-  
+
+.dark__body--on {
+  color: var(--text-color-dark);
+  background-color: var(--bg-color-dark);
+}
+
+
 button {
   background-color: transparent;
   border: none;
@@ -74,10 +86,10 @@ main {
 }
   
 
-#timer__controls__play,
-#timer__controls__stop,
-#timer__controls__plus,
-#timer__controls__minus {
+.timer__controls__play,
+.timer__controls__stop,
+.timer__controls__plus,
+.timer__controls__minus {
     width: 4.8rem;
     height: 4.8rem;
   }

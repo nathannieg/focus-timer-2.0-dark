@@ -1,5 +1,4 @@
 import {
-  buttonToggleTheme,
   minutesDisplay,
   secondsDisplay,
   buttonPlay,
@@ -8,12 +7,12 @@ import {
   buttonMinusFive,
   forestCardUnclicked,
   forestCardClicked,
-  rainCardUnlicked,
+  rainCardUnclicked,
   rainCardClicked,
   cafeCardUnclicked,
   cafeCardClicked,
   fireCardUnclicked,
-  firepCardClicked
+  fireCardClicked
 } from './elements.js'
 import Sounds from './sounds.js'
 
@@ -31,15 +30,55 @@ export default function ({ timer }) {
     sound.pressButton()
   })
 
+  // FOREST CARD
   forestCardUnclicked.addEventListener('click', () => {
-    sound.playForestSound()
+    sound.forestSound.play()
     forestCardUnclicked.classList.add('hide')
     forestCardClicked.classList.remove('hide')
   })
 
   forestCardClicked.addEventListener('click', () => {
-    sound.stopForestSound()
+    sound.forestSound.pause()
     forestCardClicked.classList.add('hide')
     forestCardUnclicked.classList.remove('hide')
+  })
+
+  // RAIN CARD
+  rainCardUnclicked.addEventListener('click', () => {
+    sound.rainSound.play()
+    rainCardUnclicked.classList.add('hide')
+    rainCardClicked.classList.remove('hide')
+  })
+
+  rainCardClicked.addEventListener('click', () => {
+    sound.rainSound.pause()
+    rainCardClicked.classList.add('hide')
+    rainCardUnclicked.classList.remove('hide')
+  })
+
+  // CAFE CARD
+  cafeCardUnclicked.addEventListener('click', () => {
+    sound.cafeSound.play()
+    cafeCardUnclicked.classList.add('hide')
+    cafeCardClicked.classList.remove('hide')
+  })
+
+  cafeCardClicked.addEventListener('click', () => {
+    sound.cafeSound.pause()
+    cafeCardClicked.classList.add('hide')
+    cafeCardUnclicked.classList.remove('hide')
+  })
+
+  // FIRE CARD
+  fireCardUnclicked.addEventListener('click', () => {
+    sound.fireSound.play()
+    fireCardUnclicked.classList.add('hide')
+    fireCardClicked.classList.remove('hide')
+  })
+
+  fireCardClicked.addEventListener('click', () => {
+    sound.fireSound.pause()
+    fireCardClicked.classList.add('hide')
+    fireCardUnclicked.classList.remove('hide')
   })
 }
