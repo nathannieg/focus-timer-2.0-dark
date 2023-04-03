@@ -1,19 +1,18 @@
-@import url('./light.css');
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
   
 :root {
   font-size: 62.5%;
   
-  /* VARIABLES */
-  /* --bg-color: #FFFFFF;
+  /* VARIABLES LIGHT THEME */
+  --bg-color: #FFFFFF;
   --primary-color: #E1E1E6;
   --secondary-color: #02799D;
-  --text-color: #29292E; */
+  --text-color: #29292E;
   
   /* VARIABLES - DARK THEME*/
   --bg-color-dark: #121214;
@@ -21,9 +20,15 @@
   --secondary-color-dark: #0A3442;
   --text-color-dark: #FFFFFF;
 }
-  
-body {
-  font-family: 'Roboto', sans-serif;
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row: 1fr 1fr;
+  gap: 19.2rem;
+
+  background-color: var(--bg-color);
+  color: var(--text-color);
   height: 100vh;
 }
   
@@ -31,14 +36,28 @@ body {
   display: none;
 }
 
-.sun__button,
-.moon__button {
+/* .toggle {
   right: 3rem;
   top: 3rem;
   height: 4.4rem;
   width: 4.4rem;
   position: absolute;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+} */
+
+.toggle {
+  width: 3.6rem;
+  height: 3.6rem;
+  position: absolute;
+  top: 7rem;
+  right: 7rem;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
 }
+
 
 .dark__body--on {
   color: var(--text-color-dark);
@@ -55,14 +74,6 @@ button {
 button:hover {
   transform: scale(1.05);
   transition: 0.2s;
-}
- 
-main {
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-row: 1fr 1fr;
-  gap: 19.2rem;
 }
   
 .timer {
@@ -94,7 +105,7 @@ main {
     height: 4.8rem;
   }
   
-  /*container*/
+  /* card container*/
 .cards {
   display:grid;
   grid-template-columns: 13.8rem 13.8rem;
@@ -104,3 +115,19 @@ main {
   align-self: center;
   justify-self: flex-start;
 }
+
+
+/* DARK THEME */
+
+.container.dark {
+  color: var(--text-color-dark);
+  background-color: var(--bg-color-dark);
+}
+
+.container.dark .timer .timer__controls .timer__controls__play svg path,
+.container.dark .timer .timer__controls .timer__controls__stop svg path,
+.container.dark .timer .timer__controls .timer__controls__plus svg path,
+.container.dark .timer .timer__controls .timer__controls__minus svg path {
+  fill: #CCC4C4;
+}
+
