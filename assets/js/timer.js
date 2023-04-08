@@ -23,7 +23,7 @@ export default function Timer({ minutesDisplay, secondsDisplay }) {
 
       // If seconds has reached zero, we subtract 1 from minutes
       if (countdownSeconds <= 0) {
-        countdownSeconds = 10 //should be 60
+        countdownSeconds = 60
         --countdownMinutes // same as countdownMinutes = countdownMinutes - 1
       }
 

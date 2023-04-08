@@ -18,4 +18,4 @@
 - O botão + deve aumentar em mais 5 minutos o tempo do timer (OK).
 - O botão - deve diminuir em 5 minutos o tempo do timer (OK).
 - Criar o [dark mode](https://www.figma.com/file/Wr075kNfcVTdKdEnecd4Ha/Stage-05---Dark-Mode-FocusTimer-(Copy)-(Copy)?t=AGIvPYpIJ48HIaoG-0). (OK)
-- Nessa versão, o volume dos sons deverá ser controlado pelo slider que está embaixo de cada ícone. Por padrão, ele começa com volume máximo e, quando você clicar em qualquer área de um card, você pode baixar o volume em 50%. Quando volume chegar a 0%, para o som.
+- Nessa versão, o volume dos sons deverá ser controlado pelo slider que está embaixo de cada ícone. Por padrão, quando você clicar em qualquer área de um card, você pode deixar o volume em 50%.
