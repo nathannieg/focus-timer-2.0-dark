@@ -8,11 +8,7 @@
 
 ## Funcionalidades
 
-- Quando clicar em cada card, ele deve mudar de cor e começar a tocar um som. (OK)
-  - [Floresta](https://drive.google.com/file/d/1CRHkV72WUMdcqec5GT_KdsqFz0z3VAOA/view)
-  - [Chuva](https://drive.google.com/file/d/1Ip8xBqAUJ-bty51Wz8JBtX_bWXCgA0P2/view)
-  - [Cafeteria](https://drive.google.com/file/d/1OxLKpCwg2wrxXFNUHgZxJ51QEt0ac5RA/view)
-  - [Lareira](https://drive.google.com/file/d/1MakaBPxJvTa_whaSM3kEbRcxiVd1GRCB/view)
+- Quando clicar em cada card, ele deve mudar de cor e começar a tocar um som ([Floresta](https://drive.google.com/file/d/1CRHkV72WUMdcqec5GT_KdsqFz0z3VAOA/view), [Chuva](https://drive.google.com/file/d/1Ip8xBqAUJ-bty51Wz8JBtX_bWXCgA0P2/view), [Cafeteria](https://drive.google.com/file/d/1OxLKpCwg2wrxXFNUHgZxJ51QEt0ac5RA/view), [Lareira](https://drive.google.com/file/d/1MakaBPxJvTa_whaSM3kEbRcxiVd1GRCB/view)). (OK)
 - O botão PLAY deve acionar o timer. (OK)
 - O botão STOP deve parar o timer. (OK)
 - O botão + deve aumentar em mais 5 minutos o tempo do timer. (OK)
