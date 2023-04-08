@@ -54,3 +54,5 @@ const timer = Timer({ minutesDisplay, secondsDisplay })
 
 // Executing Events so they will happen when clicks happens
 Events({ timer })
+
+// Teste 

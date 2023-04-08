@@ -36,17 +36,6 @@
   display: none;
 }
 
-/* .toggle {
-  right: 3rem;
-  top: 3rem;
-  height: 4.4rem;
-  width: 4.4rem;
-  position: absolute;
-  display: grid;
-  place-items: center;
-  cursor: pointer;
-} */
-
 .toggle {
   width: 3.6rem;
   height: 3.6rem;
@@ -124,10 +113,67 @@ button:hover {
   background-color: var(--bg-color-dark);
 }
 
+/* Color of the timer controls */
 .container.dark .timer .timer__controls .timer__controls__play svg path,
 .container.dark .timer .timer__controls .timer__controls__stop svg path,
 .container.dark .timer .timer__controls .timer__controls__plus svg path,
 .container.dark .timer .timer__controls .timer__controls__minus svg path {
   fill: #CCC4C4;
+}
+
+/* Unclicked | Card background color */
+.container.dark .cards .card__forest--unclicked svg path,
+.container.dark .cards .card__rain--unclicked svg path,
+.container.dark .cards .card__cafe--unclicked svg path,
+.container.dark .cards .card__fire--unclicked svg path {
+  fill: #29292E;
+}
+
+/* Unclicked | Color of the graphic element inside card */
+.container.dark .cards .card__forest--unclicked svg .card__icon,
+.container.dark .cards .card__rain--unclicked svg .card__icon,
+.container.dark .cards .card__cafe--unclicked svg .card__icon,
+.container.dark .cards .card__fire--unclicked svg .card__icon {
+  fill: #C4C4CC;
+}
+
+/* Unclicked | Color of the slider (circle + rect) */
+.container.dark .cards .card__forest--unclicked svg circle,
+.container.dark .cards .card__rain--unclicked svg circle,
+.container.dark .cards .card__cafe--unclicked svg circle,
+.container.dark .cards .card__fire--unclicked svg circle,
+.container.dark .cards .card__forest--unclicked svg rect,
+.container.dark .cards .card__rain--unclicked svg rect,
+.container.dark .cards .card__cafe--unclicked svg rect,
+.container.dark .cards .card__fire--unclicked svg rect {
+  fill: #FFFFFF;
+}
+
+/* Clicked | Card background color */
+.container.dark .cards .card__forest--clicked svg path,
+.container.dark .cards .card__rain--clicked svg path,
+.container.dark .cards .card__cafe--clicked svg path,
+.container.dark .cards .card__fire--clicked svg path {
+  fill: #0a3442;
+}
+
+/* Clicked | Color of the graphic element inside card */
+.container.dark .cards .card__forest--clicked svg .card__icon,
+.container.dark .cards .card__rain--clicked svg .card__icon,
+.container.dark .cards .card__cafe--clicked svg .card__icon,
+.container.dark .cards .card__fire--clicked svg .card__icon {
+  fill: #C4C4CC;
+}
+
+/* Clicked | Color of the slider (circle + rect) */
+.container.dark .cards .card__forest--clicked svg circle,
+.container.dark .cards .card__rain--clicked svg circle,
+.container.dark .cards .card__cafe--clicked svg circle,
+.container.dark .cards .card__fire--clicked svg circle,
+.container.dark .cards .card__forest--clicked svg rect,
+.container.dark .cards .card__rain--clicked svg rect,
+.container.dark .cards .card__cafe--clicked svg rect,
+.container.dark .cards .card__fire--clicked svg rect {
+  fill: #FFFFFF;
 }
 
