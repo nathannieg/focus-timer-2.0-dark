@@ -94,7 +94,8 @@ button:hover {
     height: 4.8rem;
   }
   
-  /* card container*/
+  /* CARDS */
+
 .cards {
   display:grid;
   grid-template-columns: 13.8rem 13.8rem;
@@ -103,6 +104,86 @@ button:hover {
   grid-row-gap: 3.2rem;
   align-self: center;
   justify-self: flex-start;
+}
+
+/* 
+
+when it's all done, it should be: 
+
+.card__container__forest--unclicked,
+.card__container__forest--clicked,
+.card__container__rain--unclicked,
+.card__container__rain--clicked,
+.card__container__cafe--unclicked,
+.card__container__cafe--clicked,
+.card__container__fire--unclicked,
+.card__container__fire--clicked {}
+*/
+.card__container__forest--unclicked,
+.card__container__forest--clicked {
+  width: 13.8rem;
+  height: 15.2rem;
+  position: relative; 
+}
+
+.card__slider--unclicked {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 9rem;
+  height: 0.4rem;
+  background: #323238;
+  border-radius: 0.5rem;
+  outline: none; /* Remove outline */
+  opacity: 1; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+  position: absolute;
+  top: 11.8rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card__slider--clicked {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 9rem;
+  height: 0.4rem;
+  background: #FFFFFF;
+  border-radius: 0.5rem;
+  outline: none; /* Remove outline */
+  opacity: 1; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+  position: absolute;
+  top: 11.8rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.card__slider--unclicked::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 1.6rem;
+  height: 1.6rem;
+  background: #323238;
+  overflow: visible;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.card__slider--clicked::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 1.6rem;
+  height: 1.6rem;
+  background: #FFFFFF;
+  overflow: visible;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.card__slider--unclicked:hover,
+.card__slider--clicked:hover {
+  opacity: .8;
 }
 
 

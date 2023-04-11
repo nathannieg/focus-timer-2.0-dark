@@ -4,7 +4,7 @@
 
 - Desafio [aqui](https://efficient-sloth-d85.notion.site/FocusTimer-Dark-Mode-df7a74c5bcb745a0be5428897eb79b3e).
 
-- Layout [aqui](https://www.figma.com/file/Wr075kNfcVTdKdEnecd4Ha/Stage-05---Dark-Mode-FocusTimer-(Copy)-(Copy)?node-id=0%3A1&t=IWc9IuHflJpENjBh-0).
+- Layout [aqui](<https://www.figma.com/file/Wr075kNfcVTdKdEnecd4Ha/Stage-05---Dark-Mode-FocusTimer-(Copy)-(Copy)?node-id=0%3A1&t=IWc9IuHflJpENjBh-0>).
 
 ## Funcionalidades
 
@@ -13,5 +13,5 @@
 - O botão STOP deve parar o timer. (OK)
 - O botão + deve aumentar em mais 5 minutos o tempo do timer. (OK)
 - O botão - deve diminuir em 5 minutos o tempo do timer. (OK)
-- Criar o [dark mode](https://www.figma.com/file/Wr075kNfcVTdKdEnecd4Ha/Stage-05---Dark-Mode-FocusTimer-(Copy)-(Copy)?t=AGIvPYpIJ48HIaoG-0). (OK)
-- Nessa versão, o volume dos sons deverá ser controlado pelo slider que está embaixo de cada ícone. Por padrão, quando você clicar em qualquer área de um card, você pode deixar o volume em 50%.
+- Criar o [dark mode](<https://www.figma.com/file/Wr075kNfcVTdKdEnecd4Ha/Stage-05---Dark-Mode-FocusTimer-(Copy)-(Copy)?t=AGIvPYpIJ48HIaoG-0>). (OK)
+- Fazer o volume dos cards ser controlado por um slider. Por padrão, quando o usuário clicar em qualquer área do card, o volume deve ser 50%.

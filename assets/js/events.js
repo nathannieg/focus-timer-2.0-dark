@@ -5,14 +5,14 @@ import {
   buttonStop,
   buttonPlusFive,
   buttonMinusFive,
-  forestCardUnclicked,
-  forestCardClicked,
   rainCardUnclicked,
   rainCardClicked,
   cafeCardUnclicked,
   cafeCardClicked,
   fireCardUnclicked,
-  fireCardClicked
+  fireCardClicked,
+  forestCardContainerUnclicked,
+  forestCardContainerClicked
 } from './elements.js'
 import Sounds from './sounds.js'
 
@@ -31,16 +31,16 @@ export default function ({ timer }) {
   })
 
   // FOREST CARD
-  forestCardUnclicked.addEventListener('click', () => {
+  forestCardContainerUnclicked.addEventListener('click', () => {
     sound.forestSound.play()
-    forestCardUnclicked.classList.add('hide')
-    forestCardClicked.classList.remove('hide')
+    forestCardContainerUnclicked.classList.add('hide')
+    forestCardContainerClicked.classList.remove('hide')
   })
 
-  forestCardClicked.addEventListener('click', () => {
+  forestCardContainerClicked.addEventListener('click', () => {
     sound.forestSound.pause()
-    forestCardClicked.classList.add('hide')
-    forestCardUnclicked.classList.remove('hide')
+    forestCardContainerClicked.classList.add('hide')
+    forestCardContainerUnclicked.classList.remove('hide')
   })
 
   // RAIN CARD
